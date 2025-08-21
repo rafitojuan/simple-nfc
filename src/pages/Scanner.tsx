@@ -37,6 +37,10 @@ const Scanner: React.FC = () => {
       
       setTimeout(() => {
         navigate('/detail');
+        setTimeout(() => {
+          setNFCStatus('idle');
+          setScanMessage('Tekan tombol untuk memulai scan');
+        }, 100);
       }, 1500);
       
     } catch (error) {

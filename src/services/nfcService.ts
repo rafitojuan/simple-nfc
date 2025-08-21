@@ -99,8 +99,20 @@ class NFCService {
       }
 
       const firstRecord = records[0];
-      const decoder = new TextDecoder();
-      const rawData = decoder.decode(firstRecord.data);
+      let rawData: string;
+      
+      try {
+        if (firstRecord.data instanceof ArrayBuffer) {
+          const decoder = new TextDecoder();
+          rawData = decoder.decode(firstRecord.data);
+        } else if (typeof firstRecord.data === 'string') {
+          rawData = firstRecord.data;
+        } else {
+          rawData = String(firstRecord.data);
+        }
+      } catch (decodeError) {
+        rawData = 'Binary data detected';
+      }
 
       if (this.isEMoneyCard(rawData)) {
         const emoneyData = this.parseEMoneyData(rawData);
