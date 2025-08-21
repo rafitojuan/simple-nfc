@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { Scan, Loader2, AlertCircle, CheckCircle, Smartphone, Wifi, Volume2 } from 'lucide-react';
 import { useAppStore } from '../store/useAppStore';
 import { nfcService } from '../services/nfcService';
+import { NFCStatus } from '../types/nfc';
 
 const Scanner: React.FC = () => {
   const navigate = useNavigate();
@@ -174,7 +175,7 @@ const Scanner: React.FC = () => {
           ) : (
             <button
               onClick={startScan}
-              disabled={nfcStatus === 'scanning' || nfcStatus === 'success'}
+              disabled={nfcStatus === ('scanning' as NFCStatus) || nfcStatus === ('success' as NFCStatus)}
               className={`w-full flex items-center justify-center space-x-3 py-4 px-6 rounded-xl text-white font-semibold transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed bg-gradient-to-r ${
                 getScanButtonColor()
               } hover:scale-105 active:scale-95`}
