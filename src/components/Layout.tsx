@@ -45,9 +45,17 @@ const Layout: React.FC = () => {
         </div>
       </header>
 
-      <main className="px-4 pb-24">
+      <main className="px-4 pb-32">
         <Outlet />
       </main>
+
+      <footer className="fixed bottom-16 left-0 right-0 flex justify-center py-2">
+        <div className="glass-card px-4 py-2 mx-4">
+          <p className="text-xs text-gray-600 font-medium text-center">
+            made by rafitojuan
+          </p>
+        </div>
+      </footer>
 
       <nav className="fixed bottom-0 left-0 right-0 glass backdrop-blur-lg border-t border-white/20">
         <div className="flex items-center justify-around py-2">

@@ -1,57 +1,110 @@
-# React + TypeScript + Vite
+# 📱 Simple NFC Reader
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> **Aplikasi pembaca NFC yang revolusioner dengan desain glassmorphism yang memukau dan fitur text-to-speech otomatis**
 
-Currently, two official plugins are available:
+*Transformasi cara Anda berinteraksi dengan teknologi NFC - sederhana, elegan, dan powerful!*
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ **Mengapa Simple NFC Reader?**
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+🚀 **Pengalaman Pengguna Terdepan** - Interface glassmorphism yang modern dengan animasi halus dan responsif  
+🎯 **Multi-Format Support** - Baca kartu e-money, tag NFC baru, dan data mentah dalam satu aplikasi  
+🔊 **Aksesibilitas Tinggi** - Text-to-speech otomatis untuk pengalaman yang inklusif  
+💳 **E-Money Management** - Kelola saldo kartu e-money dengan fitur modifikasi yang aman  
+⚡ **Performa Optimal** - Built dengan React 18 + TypeScript untuk kecepatan dan stabilitas maksimal
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+---
+
+## 🎨 **Fitur Unggulan**
+
+### 🔍 **Scanner NFC Canggih**
+- Deteksi real-time dengan feedback visual yang responsif
+- Support multi-format: kartu e-money, tag NFC, data mentah
+- Indikator status pembacaan dengan animasi yang menarik
+
+### 💰 **Pengelolaan E-Money Terpadu**
+- Tampilan saldo dengan format mata uang yang akurat
+- Fitur modifikasi saldo dengan sistem keamanan berlapis
+- Riwayat transaksi yang terorganisir dengan baik
+
+### 🎤 **Text-to-Speech Otomatis**
+- Pembacaan data NFC secara otomatis
+- Kontrol kecepatan, volume, dan bahasa
+- Pengalaman aksesibilitas yang superior
+
+### 🎭 **Desain Glassmorphism Modern**
+- Efek transparansi dan blur yang elegan
+- Palet warna pastel yang nyaman dipandang
+- Animasi micro-interactions yang halus
+- Layout minimalis dengan navigasi intuitif
+
+---
+
+## 🖼️ **Preview Aplikasi**
+
+*Screenshot dan demo akan segera tersedia*
+
+---
+
+## 🚀 **Quick Start**
+
+```bash
+# Clone repository
+git clone https://github.com/username/simple-nfc.git
+
+# Install dependencies
+cd simple-nfc
+npm install
+
+# Start development server
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+**Persyaratan:**
+- Node.js 18+
+- Browser dengan dukungan Web NFC API
+- Perangkat dengan sensor NFC
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config({
-  extends: [
-    // other configs...
-    // Enable lint rules for React
-    reactX.configs['recommended-typescript'],
-    // Enable lint rules for React DOM
-    reactDom.configs.recommended,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🛠️ **Tech Stack**
+
+- **Frontend:** React 18 + TypeScript + Vite
+- **Styling:** Tailwind CSS + Custom Glassmorphism
+- **Animation:** Framer Motion
+- **APIs:** Web NFC API + Web Speech API
+- **State Management:** Zustand
+- **Routing:** React Router
+
+---
+
+## 📱 **Browser Support**
+
+| Browser | NFC Support | Recommended |
+|---------|-------------|-------------|
+| Chrome Mobile | ✅ | ✅ |
+| Edge Mobile | ✅ | ✅ |
+| Samsung Internet | ✅ | ✅ |
+| Firefox Mobile | ❌ | ❌ |
+| Safari | ❌ | ❌ |
+
+---
+
+## 🎯 **Roadmap**
+
+- [ ] PWA Support
+- [ ] Offline Mode
+- [ ] Multi-language Support
+- [ ] Advanced Analytics
+- [ ] Cloud Sync
+
+---
+
+## 👨‍💻 **Credit**
+
+**made by rafitojuan**
+
+---
+
+*Dibuat dengan ❤️ untuk memberikan pengalaman NFC terbaik*
