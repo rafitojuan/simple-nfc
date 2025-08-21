@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Scan, Loader2, AlertCircle, CheckCircle, Smartphone, Wifi, Volume2 } from 'lucide-react';
 import { useAppStore } from '../store/useAppStore';
@@ -16,37 +16,10 @@ const Scanner: React.FC = () => {
   } = useAppStore();
   
   const [scanMessage, setScanMessage] = useState('Tekan tombol untuk memulai scan');
-  const [hasPermission, setHasPermission] = useState(false);
-
-  useEffect(() => {
-    checkNFCPermission();
-  }, []);
-
-  const checkNFCPermission = async () => {
-    if (!isNFCSupported) {
-      setError('NFC tidak didukung pada perangkat ini');
-      return;
-    }
-
-    try {
-      const permission = await nfcService.requestPermission();
-      setHasPermission(permission);
-      if (!permission) {
-        setError('Izin NFC diperlukan untuk menggunakan fitur ini');
-      }
-    } catch (error) {
-      setError((error as Error).message);
-    }
-  };
 
   const startScan = async () => {
     if (!isNFCSupported) {
       setError('NFC tidak didukung pada perangkat ini');
-      return;
-    }
-
-    if (!hasPermission) {
-      await checkNFCPermission();
       return;
     }
 
@@ -201,7 +174,7 @@ const Scanner: React.FC = () => {
           ) : (
             <button
               onClick={startScan}
-              disabled={!hasPermission || nfcStatus === 'success'}
+              disabled={nfcStatus === 'scanning' || nfcStatus === 'success'}
               className={`w-full flex items-center justify-center space-x-3 py-4 px-6 rounded-xl text-white font-semibold transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed bg-gradient-to-r ${
                 getScanButtonColor()
               } hover:scale-105 active:scale-95`}

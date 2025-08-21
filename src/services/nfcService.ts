@@ -22,11 +22,17 @@ class NFCService {
     }
 
     try {
-      const permission = await navigator.permissions.query({ name: 'nfc' as PermissionName });
-      return permission.state === 'granted';
-    } catch (error) {
-      console.error('Error checking NFC permission:', error);
-      return false;
+      const ndef = new (window as any).NDEFReader();
+      await ndef.scan();
+      return true;
+    } catch (error: any) {
+      if (error.name === 'NotAllowedError') {
+        throw new Error('Izin NFC ditolak. Silakan aktifkan NFC dan berikan izin.');
+      } else if (error.name === 'NotSupportedError') {
+        throw new Error('NFC tidak didukung pada perangkat ini');
+      } else {
+        throw new Error('Gagal meminta izin NFC: ' + error.message);
+      }
     }
   }
 
