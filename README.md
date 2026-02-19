@@ -1,4 +1,4 @@
-# 📱 Simple NFC Reader
+# Simple NFC Reader
 
 > **Aplikasi pembaca NFC yang revolusioner dengan desain glassmorphism yang memukau dan fitur text-to-speech otomatis**
 
@@ -6,34 +6,34 @@
 
 ---
 
-## ✨ **Mengapa Simple NFC Reader?**
+## **Mengapa Simple NFC Reader?**
 
-🚀 **Pengalaman Pengguna Terdepan** - Interface glassmorphism yang modern dengan animasi halus dan responsif  
-🎯 **Multi-Format Support** - Baca kartu e-money, tag NFC baru, dan data mentah dalam satu aplikasi  
-🔊 **Aksesibilitas Tinggi** - Text-to-speech otomatis untuk pengalaman yang inklusif  
-💳 **E-Money Management** - Kelola saldo kartu e-money dengan fitur modifikasi yang aman  
-⚡ **Performa Optimal** - Built dengan React 18 + TypeScript untuk kecepatan dan stabilitas maksimal
+**Pengalaman Pengguna Terdepan** - Interface glassmorphism yang modern dengan animasi halus dan responsif  
+**Multi-Format Support** - Baca kartu e-money, tag NFC baru, dan data mentah dalam satu aplikasi  
+**Aksesibilitas Tinggi** - Text-to-speech otomatis untuk pengalaman yang inklusif  
+**E-Money Management** - Kelola saldo kartu e-money dengan fitur modifikasi yang aman  
+**Performa Optimal** - Built dengan React 18 + TypeScript untuk kecepatan dan stabilitas maksimal
 
 ---
 
-## 🎨 **Fitur Unggulan**
+## **Fitur Unggulan**
 
-### 🔍 **Scanner NFC Canggih**
+### **Scanner NFC Canggih**
 - Deteksi real-time dengan feedback visual yang responsif
 - Support multi-format: kartu e-money, tag NFC, data mentah
 - Indikator status pembacaan dengan animasi yang menarik
 
-### 💰 **Pengelolaan E-Money Terpadu**
+### **Pengelolaan E-Money Terpadu**
 - Tampilan saldo dengan format mata uang yang akurat
 - Fitur modifikasi saldo dengan sistem keamanan berlapis
 - Riwayat transaksi yang terorganisir dengan baik
 
-### 🎤 **Text-to-Speech Otomatis**
+### **Text-to-Speech Otomatis**
 - Pembacaan data NFC secara otomatis
 - Kontrol kecepatan, volume, dan bahasa
 - Pengalaman aksesibilitas yang superior
 
-### 🎭 **Desain Glassmorphism Modern**
+### **Desain Glassmorphism Modern**
 - Efek transparansi dan blur yang elegan
 - Palet warna pastel yang nyaman dipandang
 - Animasi micro-interactions yang halus
@@ -41,13 +41,13 @@
 
 ---
 
-## 🖼️ **Preview Aplikasi**
+## **Preview Aplikasi**
 
 *Screenshot dan demo akan segera tersedia*
 
 ---
 
-## 🚀 **Quick Start**
+## **Quick Start**
 
 ```bash
 # Clone repository
@@ -68,7 +68,7 @@ npm run dev
 
 ---
 
-## 🛠️ **Tech Stack**
+## **Tech Stack**
 
 - **Frontend:** React 18 + TypeScript + Vite
 - **Styling:** Tailwind CSS + Custom Glassmorphism
@@ -79,7 +79,7 @@ npm run dev
 
 ---
 
-## 📱 **Browser Support**
+## **Browser Support**
 
 | Browser | NFC Support | Recommended |
 |---------|-------------|-------------|
@@ -91,7 +91,7 @@ npm run dev
 
 ---
 
-## 🎯 **Roadmap**
+## **Roadmap**
 
 - [ ] PWA Support
 - [ ] Offline Mode
@@ -101,7 +101,7 @@ npm run dev
 
 ---
 
-## 👨‍💻 **Credit**
+## **Credit**
 
 **made by rafitojuan**
 
